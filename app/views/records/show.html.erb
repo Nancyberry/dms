@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @record.user_id %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @record.device_id %>
+</p>
+
+<p>
+  <strong>Land at:</strong>
+  <%= @record.land_at %>
+</p>
+
+<p>
+  <strong>Return at:</strong>
+  <%= @record.return_at %>
+</p>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

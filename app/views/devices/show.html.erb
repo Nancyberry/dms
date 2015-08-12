@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @device.model %>
+</p>
+
+<p>
+  <strong>System:</strong>
+  <%= @device.system %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @device.version %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @device.label %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @device.status %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @device.note %>
+</p>
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
