@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Devices</h1>
+<%= render partial: 'search_form', locals: { path: devices_path } %>
 
+<h3>Results</h3>
 <table>
   <thead>
     <tr>
@@ -19,14 +21,14 @@
   <tbody>
     <% @devices.each do |device| %>
       <tr>
-        <td><%= device.model %></td>
-        <td><%= device.type %></td>
-        <td><%= device.system %></td>
+        <td><%= link_to device.model, params.merge(model: device.model) %></td>
+        <td><%= link_to device.type, params.merge(type: device.type) %></td>
+        <td><%= link_to device.system, params.merge(system: device.system) %></td>
         <td><%= device.version %></td>
         <td><%= device.region %></td>
         <td><%= device.available %></td>
         <td><%= device.note %></td>
-        <td><%= link_to 'Show', device %></td>
+        <td><%= link_to 'Details', device %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>
         <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
