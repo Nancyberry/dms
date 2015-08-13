@@ -2,16 +2,18 @@
 
 one:
   model: MyString
+  type: 
   system: MyString
   version: MyString
-  label: MyString
-  status: false
+  region: MyString
+  available: false
   note: MyText
 
 two:
   model: MyString
+  type: 
   system: MyString
   version: MyString
-  label: MyString
-  status: false
+  region: MyString
+  available: false
   note: MyText

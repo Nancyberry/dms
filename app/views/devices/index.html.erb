@@ -6,10 +6,11 @@
   <thead>
     <tr>
       <th>Model</th>
+      <th>Type</th>
       <th>System</th>
       <th>Version</th>
-      <th>Label</th>
-      <th>Status</th>
+      <th>Region</th>
+      <th>Available</th>
       <th>Note</th>
       <th colspan="3"></th>
     </tr>
@@ -19,10 +20,11 @@
     <% @devices.each do |device| %>
       <tr>
         <td><%= device.model %></td>
+        <td><%= device.type %></td>
         <td><%= device.system %></td>
         <td><%= device.version %></td>
-        <td><%= device.label %></td>
-        <td><%= device.status %></td>
+        <td><%= device.region %></td>
+        <td><%= device.available %></td>
         <td><%= device.note %></td>
         <td><%= link_to 'Show', device %></td>
         <td><%= link_to 'Edit', edit_device_path(device) %></td>

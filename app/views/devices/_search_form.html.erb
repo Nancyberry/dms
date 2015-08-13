@@ -1,0 +1,14 @@
+<%= form_tag(path, :method => "get") do %>
+  <%= text_field_tag 'model', params[:model], :placeholder =>'Model' %>
+  <%= text_field_tag 'system', params[:system], :placeholder =>'System' %><br/>
+<!--   <%= text_field_tag 'hardware', params[:hardware], :placeholder =>'Hardware' %>
+  <%= text_field_tag 'os_version', params[:os_version], :placeholder =>'OS Version' %>
+  <%= text_field_tag 'app_version', params[:app_version], :placeholder =>'App Version' %>
+  <%= text_field_tag 'user_ip', params[:user_ip], :placeholder =>'User IP' %>
+  <%= text_field_tag 'computer_guid', params[:computer_guid], :placeholder =>'Unique ID' %>
+  <%= text_field_tag 'start', params[:start], :placeholder =>'Since' %>
+  <%= text_field_tag 'duration', params[:duration], :placeholder =>'Duration(days)' %><br/>
+  <%= text_area_tag 'log_pattern', params[:log_pattern], :placeholder =>'Text in log pattern', style: 'width: 90%; height: 30px' %> -->
+  <%= submit_tag 'Filter', :class => "button"%>
+<% end %>
+<%= button_to "All", path, :method => "get" %>

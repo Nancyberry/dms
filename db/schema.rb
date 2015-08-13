@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150812102016) do
+ActiveRecord::Schema.define(version: 20150813061023) do
 
   create_table "devices", force: :cascade do |t|
     t.string   "model"
+    t.string   "type"
     t.string   "system"
     t.string   "version"
-    t.string   "label"
-    t.boolean  "status"
+    t.string   "region"
+    t.boolean  "available"
     t.text     "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
